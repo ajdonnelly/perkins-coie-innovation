@@ -12,26 +12,30 @@
   :root { --ink:#0e3330; --muted:#5b5852; --line:#d9d3c8; --accent:#0c6b4d; --paper:#ffffff; }
   * { box-sizing: border-box; }
   html, body { margin:0; padding:0; background:#eee9dd; color:var(--ink);
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif; line-height:1.6; }
-  .sheet { max-width: 8.5in; margin: 28px auto; background: var(--paper); padding: 0.72in 0.8in 0.7in;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif; line-height:1.55; }
+  .sheet { max-width: 8.5in; margin: 28px auto; background: var(--paper); padding: 0.7in 0.8in 0.65in;
     box-shadow: 0 18px 50px rgba(14,51,48,0.10); }
-  .name { margin:0; font-family:"Archivo", Inter, sans-serif; font-weight:800; font-size:27pt;
+  .name { margin:0; font-family:"Archivo", Inter, sans-serif; font-weight:800; font-size:26pt;
     letter-spacing:-0.01em; color:var(--ink); }
-  .title-line { margin:6px 0 0; color:var(--accent); font-weight:700; font-size:11pt; }
-  .contact { margin:10px 0 0; padding-bottom:14px; border-bottom:2px solid var(--accent);
-    color:var(--muted); font-size:9.6pt; }
+  .title-line { margin:6px 0 0; color:var(--accent); font-weight:700; font-size:10.6pt; }
+  .contact { margin:9px 0 0; padding-bottom:13px; border-bottom:2px solid var(--accent);
+    color:var(--muted); font-size:9.3pt; }
   .contact a { color:var(--accent); text-decoration:none; }
-  .meta { margin:22px 0 0; font-size:10pt; }
+  .meta { margin:20px 0 0; font-size:9.8pt; }
   .meta .date { color:var(--muted); }
-  .meta .to { margin-top:16px; }
+  .meta .to { margin-top:14px; }
   .meta .to strong { display:block; color:var(--ink); }
-  .body p { margin:0 0 13px; font-size:10.4pt; }
-  .sign { margin-top:20px; }
+  .body p { margin:0 0 10px; font-size:10.1pt; }
+  .sign { margin-top:16px; }
   .sign strong { display:block; margin-top:2px; }
-  @page { size: letter; margin: 0.7in; }
+  @page { size: letter; margin: 0.6in;
+    @bottom-left { content: "Alex Donnelly \2014 Cover Letter \2014 K&I Program Manager"; font-family: Inter, Arial, sans-serif; font-size: 7.5pt; color: #8a857c; }
+    @bottom-right { content: "Page " counter(page) " of " counter(pages); font-family: Inter, Arial, sans-serif; font-size: 7.5pt; color: #8a857c; }
+  }
   @media print {
     html, body { background:#fff; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
     .sheet { box-shadow:none; margin:0; max-width:none; padding:0; }
+    .body p { orphans: 3; widows: 3; }
   }
 </style>
 </head>
@@ -54,42 +58,78 @@
       </div>
     </div>
 
-    <div class="body" style="margin-top:20px;">
-      <p>Dear Hiring Team,</p>
+    <div class="body" style="margin-top:18px;">
+      <p>Dear Hiring Team:</p>
       <p>
-        I&rsquo;m applying for the Knowledge &amp; Innovation Program Manager role because it is exactly the work
-        I do: bridging legal practice, business operations, and technology to design, deploy, and measure AI
-        solutions that improve efficiency, quality, and client value. I&rsquo;ve done it from inside a firm
-        &mdash; as the person who has to make adoption real, safely &mdash; and I&rsquo;d like to build it as a
-        program at Ashurst Perkins Coie, starting in Chicago and beyond.
+        I am applying for the Knowledge &amp; Innovation Program Manager role because it sits directly at the
+        intersection of the work I have been doing inside law firms: helping legal teams make practical use of
+        new technology, improving the workflows around it, and ensuring that adoption is real rather than merely
+        announced.
       </p>
       <p>
-        Most recently, as a senior litigation paralegal, I serve on my firm&rsquo;s AI committee and enterprise
-        AI pilot. I help integrate tools like Microsoft Copilot and Filevine&rsquo;s Lois into real legal work,
-        translate business needs into workflows, evaluate output for reliability, and build the guardrails that
-        keep confidential and privileged data protected. I co-led training for colleagues from staff to partners
-        and documented the adoption best practices that turned first use into habit. Before that I ran a boutique
-        firm&rsquo;s operations end to end through repeated waves of technology adoption &mdash; process
-        improvement is second nature to me.
+        My background is in litigation operations, but the work has always been broader than keeping cases
+        organized. I have spent more than a decade inside plaintiff-side, corporate, and medical-malpractice
+        practices helping teams manage the systems and processes that keep a firm moving: case management,
+        discovery, docketing, document organization, trial preparation, and the day-to-day coordination behind
+        active matters. I have worked through repeated technology changes from inside the firm, where success
+        depends less on the software itself than on whether busy attorneys, paralegals, case managers, and staff
+        can see a genuine improvement in their work.
       </p>
       <p>
-        The role asks for someone who can both engineer the solution and prove its value, and that&rsquo;s where
-        I&rsquo;m strongest. I design AI-enabled workflows and measure them &mdash; adoption, time saved, cost,
-        and quality &mdash; the way a portfolio dashboard demands. My graduate training in biomedical
-        visualization and learning theory means I can also do the client-facing and enablement half of the job:
-        partnering with Learning &amp; Development to upskill lawyers and staff, running education sessions, and
-        building the presentations and outcome reports that show clients measurable value. I&rsquo;m comfortable
-        with both technical and non-technical audiences because I can speak &mdash; and build &mdash; in both.
+        Most recently, as a Senior Litigation Paralegal, I serve on my firm&rsquo;s AI committee and enterprise
+        AI pilot. I have helped evaluate and introduce tools including Microsoft Copilot and Filevine&rsquo;s
+        Lois into real legal workflows. That has meant translating business needs into specific use cases,
+        reviewing outputs against source material, thinking carefully about confidentiality and privilege, and
+        helping colleagues understand where AI can assist and where professional judgment must remain central. I
+        have also helped train users across roles and document the practical conditions that turn a first use
+        into a repeatable habit.
       </p>
       <p>
-        I&rsquo;m a daily user of the AI tools this work runs on (Copilot, Claude, ChatGPT, Gemini, NotebookLM),
-        I have full-stack coding foundations, and I&rsquo;m starting a part-time, evening Executive J.D. in AI
-        law and governance this fall &mdash; a night program that keeps me current on responsible-AI standards
-        without affecting my full-time availability. I&rsquo;ve built a short work sample for this application (a
-        responsible-AI adoption program, with a Chicago pilot deck, an interactive training module, an
-        adoption-and-value tracker, and a 90-day plan), and I&rsquo;d welcome the chance to walk you through it.
+        What appeals to me about this role is that it requires both program thinking and close attention to the
+        work itself. I am comfortable identifying a workflow worth improving, defining where an AI-assisted
+        process should begin, establishing a baseline, and measuring whether the change improves time, effort,
+        quality, or client value. I am equally comfortable helping people use that workflow through guided
+        practice, clear documentation, role-specific examples, and feedback loops.
       </p>
-      <p>Thank you for your consideration.</p>
+      <p>
+        My graduate training in biomedical visualization has shaped how I approach that enablement work. Much of
+        my academic and professional work has involved translating technical scientific and medical information
+        for audiences with very different levels of background knowledge, including attorneys, experts, students,
+        clients, and lay decision-makers. Through formal coursework and project work in learning theory,
+        instructional design, and scientific communication, I have learned to begin with the audience&rsquo;s
+        existing knowledge, identify the decision or skill they need to develop, and design materials that make
+        complex information usable rather than simply more detailed.
+      </p>
+      <p>
+        That translates directly to AI adoption within a law firm. A firm is not one audience. It includes
+        partners who need to understand strategic value, risk, and client implications; associates who may be
+        looking for stronger ways to research, draft, and analyze; paralegals and case managers who carry much
+        of the volume work; and administrative staff who need a clear understanding of how a new workflow changes
+        their role. Those groups bring different levels of technical comfort, different concerns, and different
+        reasons to engage. Effective adoption cannot rely on one broad training session or a generic product
+        demonstration. It requires role-specific examples, practical exercises tied to real work, clear
+        guardrails, and communication that helps each person understand both what the technology can do and what
+        remains their responsibility.
+      </p>
+      <p>
+        I am a daily user of Copilot, Claude, ChatGPT, Gemini, and NotebookLM, and I bring full-stack coding
+        foundations as well as a practical understanding of legal workflows and legal risk. This fall, I will
+        begin a part-time evening Executive J.D. focused on AI law and governance. The program will allow me to
+        continue developing my understanding of responsible-AI standards while remaining fully available for
+        full-time work.
+      </p>
+      <p>
+        For this application, I have built a short work sample centered on a responsible-AI adoption program. It
+        includes a Chicago pilot deck, an interactive training module, an adoption-and-value tracker, and a
+        90-day implementation plan. Together, those materials reflect how I think about this work: begin with a
+        real workflow, test it carefully, measure what changes, build trust through verification, and scale only
+        once the value is clear.
+      </p>
+      <p>
+        Thank you for your consideration. I would welcome the opportunity to discuss how my experience in
+        litigation operations, legal-AI adoption, scientific communication, and practical enablement could
+        support Ashurst Perkins Coie&rsquo;s Knowledge &amp; Innovation team.
+      </p>
       <p class="sign">Sincerely,<strong>Alex Donnelly</strong></p>
     </div>
   </div>
